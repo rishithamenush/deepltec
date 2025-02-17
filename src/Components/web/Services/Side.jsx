@@ -65,10 +65,7 @@ export default function Side() {
           </Link>
         </li>
         <li className="py-3 ps-2 border-bottom">
-          <Link
-            className="text-decoration-none text-dark linkhover"
-            to="/Web"
-          >
+          <Link className="text-decoration-none text-dark linkhover" to="/Web">
             Web Development.
           </Link>
         </li>
@@ -91,7 +88,7 @@ export default function Side() {
           className="text-decoration-none text-white ps-1"
           to="tel:+46 123 456 789"
         >
-          +972 592 199 002
+          +94 77 698 5444
         </Link>
       </div>
     </div>
