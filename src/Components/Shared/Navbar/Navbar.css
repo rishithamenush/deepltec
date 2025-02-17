@@ -1,0 +1,87 @@
+.nav {
+    background-color: #fff !important;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.nav-content {
+    position: relative;
+    padding-bottom: 2pt;
+  }
+  
+  .nav-content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2pt;
+    background-color: #1f6b8d;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.9s ease-out;
+  }
+  
+  .nav-content:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.bg-active {
+    background-color: #303131; 
+  }
+  
+  .navbar .navbar-collapse {
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar-collapse.show {
+    opacity: 1;
+  }
+  
+  @font-face {
+    font-family: 'Oracle Sans';
+    src: url('/path-to-font/OracleSans.woff2') format('woff2'), /* ضع مسار الخط */
+         url('/path-to-font/OracleSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .oracle-badge {
+    display: inline-block;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+
+  .oracle-partner {
+    font-size: 1.3rem; /* تصغير حجم النص */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* محاذاة المحتوى لليمين */
+    gap: 5px; /* مسافة بين الشعار والنص */
+  }
+  
+  .oracle-partner img {
+    width: 150px; /* تصغير حجم الصورة */
+    height: 50px;
+    padding-top: 4px;
+    object-fit: cover; 
+    object-position: center; 
+  }
+  
+  .oracle-partner span {
+    color: white;
+    font-weight: normal;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1; 
+  }
